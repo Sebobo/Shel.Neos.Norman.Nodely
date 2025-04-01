@@ -94,6 +94,7 @@ class NormanNodelyPlugin extends React.PureComponent {
                         timout: 10000,
                     }
                 })
+                document.getElementById('normanNodelyInput').value = '';
             }
         });
         ChatBot.setBotName("Norman Nodely");
@@ -192,15 +193,7 @@ class NormanNodelyPlugin extends React.PureComponent {
         }
     }
 
-    handleSubmit = (message) => {
-        // this.setState({
-        //     lastFlashMessage: {
-        //         id: '' + Math.random() * 1000,
-        //         message: message,
-        //         severity: 'default',
-        //         timeout: 3000,
-        //     }
-        // });
+    handleSubmit = (e) => {
     }
 
     getRandomMessage(severity) {
@@ -215,7 +208,7 @@ class NormanNodelyPlugin extends React.PureComponent {
         return (
             <div className="normanNodely">
                 <span className="avatar" onClick={this.handleClick}>
-                    <svg id="normanSvg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    <svg id="normanSvg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                          x="0" y="0"
                          width="111.73" height="124.72" viewBox="0, 0, 111.73, 124.72">
                         <defs>
@@ -252,7 +245,7 @@ class NormanNodelyPlugin extends React.PureComponent {
                     id="normanNodelyInput"
                     type="text"
                     placeholder="Talk to me…"
-                    onSubmit={(e) => this.handleSubmit(e.target.value)}
+                    onKeyPress={this.handleSubmit}
                 />
                 <div id="chatBot">
                     <div id="chatBotThinkingIndicator"></div>
