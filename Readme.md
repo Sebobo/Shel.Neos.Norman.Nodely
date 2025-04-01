@@ -6,4 +6,6 @@
 * Fully replaces the boring Neos logo in the top left
 * Has googly eyes following your cursor
 
-[![Screenshot](Norman.png)
+![Screenshot](Norman.png)
+
+![Clip](NormanNodelyEyes.gif)
