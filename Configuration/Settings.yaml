@@ -1,0 +1,15 @@
+Neos:
+  Neos:
+    userInterface:
+      translation:
+        autoInclude:
+          Shel.Neos.Norman.Nodely:
+            - Main
+    Ui:
+      resources:
+        stylesheets:
+          'Shel.Neos.Norman.Nodely:Plugin':
+            resource: resource://Shel.Neos.Norman.Nodely/Public/Plugin.css
+        javascript:
+          'Shel.Neos.Norman.Nodely:Plugin':
+            resource: resource://Shel.Neos.Norman.Nodely/Public/Plugin.js
