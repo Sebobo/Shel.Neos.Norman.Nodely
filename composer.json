@@ -1,5 +1,5 @@
 {
-  "description": "Foo",
+  "description": "Probably one of the best Neos CMS plugins ever, providing an amazing 'AI' assistant in the Neos backend.",
   "type": "neos-plugin",
   "name": "shel/neos-norman-nodely",
   "license": "MIT",
