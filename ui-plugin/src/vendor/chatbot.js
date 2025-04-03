@@ -1,3 +1,7 @@
+function stripTags(s) {
+    return s.replace(/<\/?[^>]+(>|$)/g, "");
+}
+
 /**
  * Based on https://github.com/ddsky/chatbot
  */
@@ -43,7 +47,7 @@ const ChatBot = function () {
             const regex = /<span class=['"]phraseHighlight["']>['"](.+?)['"]<\/span>/gi;
             let matches;
             while ((matches = regex.exec(pdesc)) !== null) {
-                examplePhrases.push(matches[1].replace(/['"]/gi, ''));
+                examplePhrases.push(stripTags(matches[1].replace(/['"]/gi, '')));
             }
 
             description += '<div class="commandDescription">' + pdesc + '</div>';

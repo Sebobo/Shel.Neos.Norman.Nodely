@@ -1,0 +1,7 @@
+# Add script to animate his all seeing eyes
+prototype(Neos.Neos:View.Login) {
+    renderer.@process.appendMoreAwesomeScript = afx`
+        {value}
+        <script src={StaticResource.uri('Shel.Neos.Norman.Nodely', 'Public/Login.js')}></script>
+    `
+}

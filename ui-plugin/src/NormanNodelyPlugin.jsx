@@ -81,7 +81,7 @@ class NormanNodelyPlugin extends React.PureComponent {
         const that = this;
         ChatBot.init({
             inputs: '#normanNodelyInput',
-            inputCapabilityListing: false,
+            inputCapabilityListing: true,
             addChatEntryCallback: (entryDiv, text, origin) => {
                 if (origin !== 'bot') {
                     return;
