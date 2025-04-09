@@ -13,3 +13,7 @@ Neos:
         javascript:
           'Shel.Neos.Norman.Nodely:Plugin':
             resource: resource://Shel.Neos.Norman.Nodely/Public/Plugin.js
+
+      frontendConfiguration:
+        'Shel.Neos.Norman.Nodely:Plugin':
+          eyeOffsetDegrees: 60
