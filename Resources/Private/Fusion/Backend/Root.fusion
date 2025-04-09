@@ -2,6 +2,13 @@
 prototype(Neos.Neos:View.Login) {
     renderer.@process.appendMoreAwesomeScript = afx`
         {value}
+        <div
+            style="display:none"
+            id="nodelyInjector"
+            data-eye-offset-degrees={Configuration.setting('Neos.Neos.Ui.frontendConfiguration')['Shel.Neos.Norman.Nodely:Plugin'].eyeOffsetDegrees}
+        >
+            {StaticResource.content('Shel.Neos.Norman.Nodely', 'Public/Nodely.svg')}
+        </div>
         <script src={StaticResource.uri('Shel.Neos.Norman.Nodely', 'Public/Login.js')}></script>
     `
 }

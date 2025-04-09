@@ -5,6 +5,10 @@ Neos:
         autoInclude:
           Shel.Neos.Norman.Nodely:
             - Main
+
+      backendLoginForm:
+        logoImage: '' # Thou shall not have a login logo beside Norman!
+
     Ui:
       resources:
         stylesheets:
